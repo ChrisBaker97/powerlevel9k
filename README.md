@@ -172,6 +172,7 @@ P9K_LEFT_PROMPT_ELEMENTS=(context time battery dir vcs virtualenv custom_wifi_si
 P9K_CUSTOM_WIFI_SIGNAL="echo signal: \$(nmcli device wifi | grep yes | awk '{print \$8}')"
 P9K_CUSTOM_WIFI_SIGNAL_BACKGROUND="blue"
 P9K_CUSTOM_WIFI_SIGNAL_FOREGROUND="yellow"
+P9K_CUSTOM_WIFI_SIGNAL_ICON="\uf230" # \uf230 is 
 ```
 If you prefer, you can also define the function in your `.zshrc` rather than
 putting it in-line with the variable export, as shown above. Just don't forget

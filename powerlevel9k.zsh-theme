@@ -1210,8 +1210,8 @@ prompt_node_version() {
       currentDir="$(dirname "$currentDir")"
     done
   fi
-
-  # Show version if it should been shown always or if a project has been found.
+  
+  # Show version if it should be shown always or if a project has been found.
   if [ "$POWERLEVEL9K_NODE_VERSION_PROJECT_ONLY" = false -o "$foundProject" = true ] ; then
     # Get the node version.
     local node_version=$(node -v 2>/dev/null)

@@ -115,8 +115,8 @@ The segments that are currently available are:
 * **GoLang Segments:**
     * `go_version` - Show the current GO version.
 * **Javascript / Node.js Segments:**
-    * [`nodeenv`](#nodeenv) - [nodeenv](https://github.com/ekalinin/nodeenv) prompt for displaying node version and environment name.
     * [`node_version`](#node_version) - Show the version number of the installed Node.js.
+    * [`nodeenv`](#nodeenv) - [nodeenv](https://github.com/ekalinin/nodeenv) prompt for displaying node version and environment name.
     * `nvm` - Show the version of Node that is currently active, if it differs from the version used by NVM
 * **PHP Segments:**
     * `php_version` - Show the current PHP version.
@@ -557,6 +557,14 @@ line. This allows you to use segments on both lines, unlike
 prompt itself.
 
 This only works on the left side.  On the right side it does nothing.
+
+##### node_version
+
+This segment shows the _NodeJS_ version, that is currently active.
+
+| Variable | Default Value | Description |
+|----------|---------------|-------------|
+|`POWERLEVEL9K_NODE_VERSION_PROJECT_ONLY`|`false`|If `true` this segment only appears inside _NodeJS_ projects described by a `package.json`.|
 
 ##### node_version
 
